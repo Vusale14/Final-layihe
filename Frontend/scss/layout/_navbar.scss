@@ -109,23 +109,24 @@
 
         .number {
             position: relative;
-        }
 
-        .card-number {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: red;
-            border-radius: 50%;
-            right: 325px;
-            top: 20px;
-
-            p {
-                color: white;
+            .card-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                border-radius: 50%;
+                right: 20px;
+                top: -5px;
+    
+                p {
+                    color: white;
+                }
             }
+    
         }
 
         li {

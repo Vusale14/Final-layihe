@@ -154,7 +154,7 @@ table {
 .navbar ul .number {
   position: relative;
 }
-.navbar ul .card-number {
+.navbar ul .number .card-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,10 +163,10 @@ table {
   height: 20px;
   background-color: red;
   border-radius: 50%;
-  right: 325px;
-  top: 20px;
+  right: 20px;
+  top: -5px;
 }
-.navbar ul .card-number p {
+.navbar ul .number .card-number p {
   color: white;
 }
 .navbar ul li input {
