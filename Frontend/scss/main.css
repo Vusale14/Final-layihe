@@ -59,6 +59,87 @@ table {
   width: 100%;
   padding-top: 20px;
 }
+@media screen and (max-width: 1250px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}
+.navbar .fa-bars {
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 1250px) {
+  .navbar .fa-bars {
+    display: initial;
+  }
+}
+.navbar .fa-bars .bar-menu {
+  display: none;
+}
+.navbar .fa-bars:hover .bar-menu {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+}
+.navbar .sidebar {
+  display: none;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  right: -300px;
+  top: 0;
+  transition: 0.4s;
+  background-color: grey;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1250px) {
+  .navbar .sidebar {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navbar .sidebar .fa-xmark {
+  margin-top: -350px;
+  margin-left: 260px;
+}
+.navbar .sidebar a {
+  text-decoration: none;
+}
+.navbar .sidebar a {
+  font-size: 140%;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.navbar .sidebar a:hover {
+  color: rgba(255, 255, 255, 0.274);
+}
+.navbar .sidebar p {
+  font-size: 140%;
+  color: white;
+  cursor: pointer;
+}
+.navbar .sidebar button {
+  margin-left: -10px;
+}
+.navbar .sidebar.open {
+  left: 0;
+}
+.navbar #glass {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  .navbar #glass {
+    display: initial;
+  }
+}
 .navbar ul {
   display: flex;
   align-items: center;
@@ -67,8 +148,26 @@ table {
 }
 @media screen and (max-width: 1250px) {
   .navbar ul {
-    justify-content: space-around;
+    display: none;
   }
+}
+.navbar ul .number {
+  position: relative;
+}
+.navbar ul .card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  right: 325px;
+  top: 20px;
+}
+.navbar ul .card-number p {
+  color: white;
 }
 .navbar ul li input {
   position: relative;
@@ -1728,9 +1827,10 @@ body .main-field .left-side .option p {
 }
 body .main-field .right-side {
   width: 300px;
-  height: 620px;
+  height: 595px;
   border: 1px solid black;
   font-family: "Work Sans";
+  margin-top: 25px;
 }
 @media screen and (max-width: 1250px) {
   body .main-field .right-side {

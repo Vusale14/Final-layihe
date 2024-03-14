@@ -3,6 +3,99 @@
     height: 80px;
     width: 100%;
     padding-top: 20px;
+
+    @include for-size(tablet) {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .fa-bars {
+        display: none;
+        position: relative;
+        
+        @include for-size(tablet) {
+            display: initial;
+        }
+
+        .bar-menu {
+            display: none;
+        }
+    }
+
+    .fa-bars:hover {
+        
+        .bar-menu {
+            position: absolute;
+            display: block;
+            width: 300px;
+            height: 200px;
+            background-color: gray;
+        }
+    }
+    
+    .sidebar {
+        display: none;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        right: -300px;
+        top: 0;
+        transition: 0.4s;
+        background-color: grey;
+        padding: 10px 0;
+
+
+        @include for-size(tablet) {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fa-xmark {
+            margin-top: -350px;
+            margin-left: 260px;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        a {
+            font-size: 140%;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.274);
+            }
+        }
+
+        p {
+            font-size: 140%;
+            color: white;
+            cursor: pointer;
+        }
+
+        button {
+            margin-left: -10px;
+        }
+    }
+
+    .sidebar.open{
+        left: 0;
+    }
+    
+    #glass {
+        display: none;
+    
+        @include for-size(tablet) {
+            display: initial;
+        }
+    }
     
     ul {
         display: flex;
@@ -11,7 +104,28 @@
         padding: 0 5%;
 
         @include for-size(tablet) {
-            justify-content: space-around;
+            display: none;
+        }
+
+        .number {
+            position: relative;
+        }
+
+        .card-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            right: 325px;
+            top: 20px;
+
+            p {
+                color: white;
+            }
         }
 
         li {
