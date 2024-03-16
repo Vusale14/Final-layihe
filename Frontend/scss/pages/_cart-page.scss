@@ -7,9 +7,20 @@
 body {
 
     .main-card-side {
+        width: 1200px;
         display: flex;
         justify-content: space-around;
         gap: 50px;
+
+        @include for-size(tablet) {
+            width: 800px;
+            
+        }
+
+        @include for-size(mobile) {
+            width: 700px;
+            
+        }
 
         .main-cart {
             font-family: "Work Sans";
@@ -25,7 +36,7 @@ body {
             .solid {
                 width: 850px;
                 margin-left: 110px;
-                margin-top: 20px;
+                margin-top: 10px;
     
                 @include for-size(tablet) {
                     width: 700px;
@@ -58,13 +69,9 @@ body {
                         padding-left: 30px;
     
                         @include for-size(tablet) {
-                            width: 300px;
-                        }
-
-                        @include for-size(mobile) {
                             width: 260px;
                         }
-        
+
                         >h4 {
                             line-height: 20px;
 
@@ -163,7 +170,7 @@ body {
                 cursor: pointer;
 
                 @include for-size(tablet) {
-                    width: 160px;
+                    width: 120px;
                 }
     
                 >h3 {

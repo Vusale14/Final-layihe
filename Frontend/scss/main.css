@@ -132,11 +132,11 @@ table {
 .navbar .sidebar.open {
   left: 0;
 }
-.navbar #glass {
+.navbar .fa-house {
   display: none;
 }
 @media screen and (max-width: 1250px) {
-  .navbar #glass {
+  .navbar .fa-house {
     display: initial;
   }
 }
@@ -176,6 +176,7 @@ table {
   border-radius: 20px;
   border: none;
   padding-left: 40px;
+  outline: none;
 }
 .navbar ul li .fa-magnifying-glass {
   position: absolute;
@@ -1202,12 +1203,12 @@ body .all-courses .small-table {
 }
 @media screen and (max-width: 1250px) {
   body .all-courses .small-table {
-    width: 900px;
+    width: 800px;
   }
 }
 @media screen and (max-width: 835px) {
   body .all-courses .small-table {
-    width: 800px;
+    width: 700px;
   }
 }
 body .all-courses .small-table > h3 {
@@ -1243,12 +1244,12 @@ body .all-courses > .card-container > .courses-card {
 }
 @media screen and (max-width: 1250px) {
   body .all-courses > .card-container > .courses-card {
-    width: 900px;
+    width: 800px;
   }
 }
 @media screen and (max-width: 835px) {
   body .all-courses > .card-container > .courses-card {
-    width: 800px;
+    width: 600px;
   }
 }
 body .all-courses > .card-container > .courses-card > .top img {
@@ -1257,12 +1258,13 @@ body .all-courses > .card-container > .courses-card > .top img {
 }
 @media screen and (max-width: 1250px) {
   body .all-courses > .card-container > .courses-card > .top img {
-    width: 300px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 835px) {
   body .all-courses > .card-container > .courses-card > .top img {
-    height: 220px;
+    height: 300px;
+    width: 250px;
   }
 }
 body .all-courses > .card-container > .courses-card > .bottom {
@@ -1405,12 +1407,12 @@ body .all-courses .solid {
 }
 @media screen and (max-width: 1250px) {
   body .all-courses .solid {
-    width: 900px;
+    width: 800px;
   }
 }
 @media screen and (max-width: 835px) {
   body .all-courses .solid {
-    width: 800px;
+    width: 700px;
     margin-right: 20px;
   }
 }
@@ -1436,9 +1438,14 @@ body .solid {
     width: 900px;
   }
 }
+@media screen and (max-width: 1250px) {
+  body .end {
+    width: 700px;
+  }
+}
 @media screen and (max-width: 835px) {
   body .end {
-    width: 800px;
+    width: 600px;
     margin-left: 40px;
   }
 }
@@ -2575,9 +2582,20 @@ body .supporter {
 }
 
 body .main-card-side {
+  width: 1200px;
   display: flex;
   justify-content: space-around;
   gap: 50px;
+}
+@media screen and (max-width: 1250px) {
+  body .main-card-side {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 835px) {
+  body .main-card-side {
+    width: 700px;
+  }
 }
 body .main-card-side .main-cart {
   font-family: "Work Sans";
@@ -2592,7 +2610,7 @@ body .main-card-side .main-cart > h1 {
 body .main-card-side .main-cart .solid {
   width: 850px;
   margin-left: 110px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 1250px) {
   body .main-card-side .main-cart .solid {
@@ -2626,11 +2644,6 @@ body .main-card-side .main-cart .main-cart-section .course-field .course-info-fi
   padding-left: 30px;
 }
 @media screen and (max-width: 1250px) {
-  body .main-card-side .main-cart .main-cart-section .course-field .course-info-field {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 835px) {
   body .main-card-side .main-cart .main-cart-section .course-field .course-info-field {
     width: 260px;
   }
@@ -2726,7 +2739,7 @@ body .main-card-side .right-cart-field button {
 }
 @media screen and (max-width: 1250px) {
   body .main-card-side .right-cart-field button {
-    width: 160px;
+    width: 120px;
   }
 }
 body .main-card-side .right-cart-field button > h3 {
@@ -2809,7 +2822,7 @@ body .main-cart .solided {
 }
 @media screen and (max-width: 1250px) {
   body .main-cart .solided {
-    width: 900px;
+    width: 700px;
     margin-bottom: 20px;
   }
 }

@@ -155,11 +155,11 @@ body {
       margin-bottom: 40px;
 
       @include for-size(tablet) {
-        width: 900px;
+        width: 800px;
       }
 
       @include for-size(mobile) {
-        width: 800px;
+        width: 700px;
       }
 
       >h3 {
@@ -199,11 +199,11 @@ body {
          width: 1250px;
 
          @include for-size(tablet) {
-          width: 900px;
+          width: 800px;
          }
 
          @include for-size(mobile) {
-          width: 800px;
+          width: 600px;
          }
 
          >.top {
@@ -213,11 +213,12 @@ body {
              height: 200px;
 
              @include for-size(tablet) {
-              width: 300px;
+              width: 380px;
              }
 
              @include for-size(mobile) {
-              height: 220px;
+              height: 300px;
+              width: 250px;
              }
            }
          }
@@ -479,11 +480,11 @@ body {
        margin-top: 15px;
 
        @include for-size(tablet) {
-        width: 900px;
+        width: 800px;
        }
 
        @include for-size(mobile) {
-        width: 800px;
+        width: 700px;
         margin-right: 20px;
        }
       }
@@ -502,8 +503,12 @@ body {
 
     .end {
 
+      @include for-size(tablet) {
+        width: 700px;
+      }
+
       @include for-size(mobile) {
-        width: 800px;
+        width: 600px;
         margin-left: 40px
        }
     }
